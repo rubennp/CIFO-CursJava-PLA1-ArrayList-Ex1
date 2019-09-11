@@ -41,7 +41,6 @@ public class Main {
 	 * 
 	 * Prepara las cadenas a mostrar en el resultado.
 	 */
-	
 	static String resultado(ArrayList<Integer> nums) {
 		String out = "";
 		
