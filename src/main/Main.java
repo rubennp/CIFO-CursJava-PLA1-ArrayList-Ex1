@@ -27,14 +27,20 @@ public class Main {
 		} while (num != 0);
 		
 		// imprime resultado
-		System.out.println("Has introducido " + nums.size() + " números.");
-		System.out.println("Los números que has introducido son: " + resultado(nums));
+		System.out.println("-> Has introducido " + nums.size() + " números.");
+		System.out.println("-> Los números que has introducido son: " + resultado(nums));
 		for (int i = 0;i < nums.size(); i++) if (nums.get(i)%2 != 0) nums.remove(i); // quita los impares del ArrayList para imprimir
-		System.out.println("Y de ellos son pares: " + resultado(nums));
+		System.out.println("-> Y de ellos son pares: " + resultado(nums));
 		
 		in.close();
 		
 	}
+	
+	/*
+	 * resultado(ArrayList<Integer>) -> String
+	 * 
+	 * Prepara las cadenas a mostrar en el resultado.
+	 */
 	
 	static String resultado(ArrayList<Integer> nums) {
 		String out = "";
